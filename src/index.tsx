@@ -12,7 +12,7 @@ if (container) {
 
   root.render(
     <StrictMode>
-      <BrowserRouter basename={"/meditationAlexandr"}>
+      <BrowserRouter basename={"/meditationAlexandr/"}>
         <Provider store={store}>
           <App />
         </Provider>

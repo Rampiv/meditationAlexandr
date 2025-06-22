@@ -1,0 +1,6 @@
+@use "../../styles/style.scss" as *;
+
+.globe {
+  @include flexible();
+  flex-direction: column;
+}

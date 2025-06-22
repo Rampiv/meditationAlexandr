@@ -15,8 +15,8 @@ export const Header = () => {
         href: "#demography-section",
         title: "Демография",
       },
-      { key: "globe", href: "#globe", title: "Globe" },
-      { key: "part-3", href: "#part-3", title: "Part-3" },
+      { key: "globe", href: "#globe", title: "Страны" },
+      { key: "contacts", href: "#contacts", title: "Контакты" },
     ],
     [],
   )
@@ -49,7 +49,9 @@ export const Header = () => {
     window.addEventListener("scroll", handleScroll)
     handleScroll()
 
-    return () => { window.removeEventListener("scroll", handleScroll); }
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
   }, [links])
 
   return (

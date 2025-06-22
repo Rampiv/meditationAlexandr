@@ -5,6 +5,7 @@ import packageJson from "./package.json" with { type: "json" }
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/meditationAlexandr/",
   plugins: [react()],
 
   server: {

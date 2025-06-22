@@ -1,11 +1,12 @@
 @use "../../styles/style.scss" as *;
 
-.demography {  
+.demography {
   &__content {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    height: 90vh;
   }
 
   &__char {
@@ -23,6 +24,8 @@
 
   &__image {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   &__h2 {

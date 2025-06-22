@@ -11422,7 +11422,7 @@
 //   },
 // ]
 
-export const country = [
+export const dataCountry = [
   {
     type: "Feature",
     properties: {
