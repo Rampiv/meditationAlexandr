@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client"
 import { Provider } from "react-redux"
 import { App } from "./App"
 import store from "./app/store"
+import { BrowserRouter } from "react-router"
 
 const container = document.getElementById("root")
 
@@ -11,9 +12,11 @@ if (container) {
 
   root.render(
     <StrictMode>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <BrowserRouter basename={"/meditationAlexandr"}>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </BrowserRouter>
     </StrictMode>,
   )
 } else {

@@ -7,8 +7,7 @@ export const themeGlobeSlice = createAppSlice({
   name: "themeGlobe",
   initialState: "day" as Theme,
   reducers: {
-    toggleTheme: (state, action: PayloadAction<Theme>) =>
-      (state = action.payload),
+    toggleTheme: (_, action: PayloadAction<Theme>) => action.payload,
   },
 })
 
