@@ -1,0 +1,1 @@
+export { isGlobeFeature } from "./isGlobeFeature"

@@ -1,0 +1,62 @@
+@use "../../styles/style.scss" as *;
+
+.navigation {
+  width: fit-content;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &__list {
+    @include listReset();
+    @include flexible();
+
+    gap: 10px;
+
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+  }
+
+  &__item {
+    @include standartTransition();
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+
+    color: $color1;
+    text-decoration: none;
+    text-wrap: nowrap;
+    outline: none;
+    position: relative;
+
+    @media (hover) {
+      &:hover {
+        color: $color3;
+      }
+    }
+
+    &:focus {
+      color: $color3;
+    }
+
+    &:active {
+      color: $color3;
+    }
+
+    &--active {
+      color: $color3;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        right: 20px;
+        height: 2px;
+        background-color: $color3;
+      }
+    }
+  }
+}

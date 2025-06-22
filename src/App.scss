@@ -1,0 +1,77 @@
+@use "./styles/style.scss" as *;
+/* Global selectors */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Global class*/
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+}
+.hide {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+.opacity {
+  opacity: 1;
+}
+
+section {
+  padding: 60px 20px 20px;
+  min-height: 100vh;
+}
+h1 {
+  display: none;
+}
+
+.App {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #f59c1a 30%,
+    transparent 70%,
+    #fff 100%
+  );
+
+  @media (max-width: 320px) {
+    & {
+      width: 320px;
+    }
+  }
+}
